@@ -82,9 +82,9 @@ class ScheduleAccessory implements AccessoryPlugin {
         (value: CharacteristicValue, callback: CharacteristicSetCallback) => {
           this.scheduleOn = value as boolean;
 
-          this.log.info(
-            `Schedule was set to: [${this.scheduleOn ? 'ON' : 'OFF'}]`,
-          );
+          // this.log.info(
+          //   `Schedule was set to: [${this.scheduleOn ? 'ON' : 'OFF'}]`,
+          // );
 
           if (value) {
             setTimeout(() => {
